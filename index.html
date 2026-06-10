@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Tech Repairs & Institute — Master Apple Technology</title>
+  <meta name="description"
+    content="Apple Tech Repairs & Institute — World-class Apple device repair services and professional training programs. Master Apple technology, repair without limits.">
+  <meta name="keywords" content="Apple repair, iPhone repair, MacBook repair, Apple training, tech institute">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Lenis CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { 'inter': ['Inter', 'sans-serif'] },
+        }
+      }
+    }
+  </script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Three.js Import Map -->
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-text">
+      <span class="char">A</span><span class="char">P</span><span class="char">P</span><span class="char">L</span><span
+        class="char">E</span><span class="char">&nbsp;</span><span class="char">T</span><span class="char">E</span><span
+        class="char">C</span><span class="char">H</span>
+    </div>
+    <div class="preloader-line"></div>
+    <div class="preloader-sub">Repairs & Institute</div>
+  </div>
+
+  <!-- Page Transition Overlay -->
+  <div class="page-transition"></div>
+
+  <!-- Custom Cursor -->
+
+
+
+  <!-- Three.js Canvas -->
+  <div class="three-canvas" id="three-canvas"></div>
+
+  <!-- Ambient Particles -->
+  <div class="particles"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"></div>
+        Apple Tech
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="institute.html" class="nav-link">Institute</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="institute.html" class="nav-link">Institute</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero" style="display: flex; align-items: center;">
+    <div class="bg-radial-top"></div>
+    <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+      <div class="hero-content" data-parallax-mouse="10" style="text-align: left; padding: 0; margin: 0;">
+        <span class="section-label reveal">Professional Training</span>
+        <h1 class="page-hero-title reveal" style="font-size: clamp(3rem, 6vw, 5.5rem);">
+          <span class="word"><span class="word-inner">Apple</span></span>
+          <span class="word"><span class="word-inner">Tech</span></span><br>
+          <span class="word"><span class="word-inner">Repairs</span></span>
+          <span class="word"><span class="word-inner">&</span></span><br>
+          <span class="word"><span class="word-inner"><strong>Institute</strong></span></span>
+        </h1>
+        <p class="hero-subtitle" style="text-align: left; margin: 24px 0;">We fix broken Apple devices and teach you how
+          to do it.</p>
+        <div class="hero-cta" style="justify-content: flex-start;">
+          <a href="services.html" class="cta-primary magnetic"><span>Explore Services</span></a>
+          <a href="institute.html" class="cta-secondary magnetic"><span>Join Institute</span></a>
+        </div>
+      </div>
+      <div class="hero-image reveal-right" data-parallax-mouse="-10"
+        style="display: flex; justify-content: center; align-items: center;">
+        <img src="aserts/herosection.png" alt="Apple Devices">
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== VIDEO SHOWCASE ==================== -->
+  <section class="section" id="showcase">
+    <div class="container">
+      <div class="glass-card reveal"
+        style="padding: 0; overflow: hidden; border-radius: 24px; aspect-ratio: 16/9; position: relative;">
+        <video autoplay loop muted playsinline src="aserts/video.mp4"
+          style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; mix-blend-mode: screen; filter: grayscale(50%) contrast(1.2);"></video>
+        <div
+          style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); pointer-events: none;">
+        </div>
+        <div style="position: absolute; bottom: 40px; left: 40px;">
+          <h2 class="section-title" style="margin-bottom: 8px;">See Us In <strong>Action</strong></h2>
+          <p style="color: var(--gray-300);">Inside our state-of-the-art facility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ==================== SERVICES OVERVIEW ==================== -->
+  <section class="section" id="services-overview">
+    <div class="bg-radial-top"></div>
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Our Services</span>
+        <h2 class="section-title reveal">Expert Apple <strong>Repairs</strong></h2>
+        <p class="section-subtitle reveal">We handle everything from cracked screens to complex motherboard issues.</p>
+      </div>
+      <div class="cards-grid">
+        <!-- iPhone -->
+        <div class="glass-card" data-parallax-mouse="5">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg></div>
+          <h3 class="card-title">iPhone Repair</h3>
+          <p class="card-desc">Screen replacements, new batteries, and fixing water damage. We only use high-quality
+            parts.</p>
+        </div>
+        <!-- Mac -->
+        <div class="glass-card" data-parallax-mouse="8">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="2" y1="21" x2="22" y2="21"></line>
+            </svg></div>
+          <h3 class="card-title">Mac Repair</h3>
+          <p class="card-desc">Whether it's a cracked display or a completely dead logic board, we can probably fix it.
+          </p>
+        </div>
+        <!-- iPad -->
+        <div class="glass-card" data-parallax-mouse="6">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg></div>
+          <h3 class="card-title">iPad Repair</h3>
+          <p class="card-desc">Digitizer replacements, charging port repairs, and full device restoration for all iPad
+            models.</p>
+        </div>
+        <!-- Apple Watch -->
+        <div class="glass-card" data-parallax-mouse="10">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="7"></circle>
+              <polyline points="12 9 12 12 13.5 13.5"></polyline>
+              <path
+                d="M16.51 17.35l-.35 3.83a2 2 0 0 1-2 1.82H9.83a2 2 0 0 1-2-1.82l-.35-3.83m.01-10.7l.35-3.83A2 2 0 0 1 9.83 1h4.35a2 2 0 0 1 2 1.82l.35 3.83">
+              </path>
+            </svg></div>
+          <h3 class="card-title">Apple Watch</h3>
+          <p class="card-desc">Screen replacements, battery service, and sensor repairs for all Apple Watch generations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== ACHIEVEMENTS ==================== -->
+  <section class="section" id="achievements">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">By the numbers</span>
+        <h2 class="section-title reveal">A decade of <strong>fixing things</strong></h2>
+      </div>
+      <div class="stats-grid">
+        <div class="glass-card stat-item reveal"
+          style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80') center/cover;">
+          <div class="card-glow"></div>
+          <div class="stat-number" data-count="15000" data-suffix="+"
+            style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
+          <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Devices Repaired</div>
+        </div>
+        <div class="glass-card stat-item reveal"
+          style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80') center/cover;">
+          <div class="card-glow"></div>
+          <div class="stat-number" data-count="2500" data-suffix="+"
+            style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
+          <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Students Trained</div>
+        </div>
+        <div class="glass-card stat-item reveal"
+          style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1512054502232-10a0a035d672?auto=format&fit=crop&w=600&q=80') center/cover;">
+          <div class="card-glow"></div>
+          <div class="stat-number" data-count="12" data-suffix=" Yrs"
+            style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
+          <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Experience</div>
+        </div>
+        <div class="glass-card stat-item reveal"
+          style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80') center/cover;">
+          <div class="card-glow"></div>
+          <div class="stat-number" data-count="99" data-suffix="%"
+            style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
+          <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Satisfaction Rate
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== WHY CHOOSE US ==================== -->
+  <section class="section" id="why-us">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Why Apple Tech</span>
+        <h2 class="section-title reveal">Built Different. <strong>Built Better.</strong></h2>
+        <p class="section-subtitle reveal">We've been doing this a long time, and we treat every device like it's our
+          own.</p>
+      </div>
+      <div class="cards-grid cards-grid-3">
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 18h8" />
+              <path d="M3 22h18" />
+              <path d="M14 22a7 7 0 1 0 0-14h-1" />
+              <path d="M9 14h2" />
+              <path d="M9 12a2 2 0 0 1-2-2V6h6v4a2 2 0 0 1-2 2Z" />
+              <path d="M12 6V3a1 1 0 0 0-1-1H9a1 1 0 0 0-1 1v3" />
+            </svg></div>
+          <h3 class="card-title">Micro-soldering</h3>
+          <p class="card-desc">We can fix individual chips on the motherboard, saving you from buying a whole new logic
+            board.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
+            </svg></div>
+          <h3 class="card-title">Same-Day Service</h3>
+          <p class="card-desc">We try to get most standard repairs done on the same day you drop it off.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg></div>
+          <h3 class="card-title">Lifetime Warranty</h3>
+          <p class="card-desc">Every repair backed by our confidence. If it fails, we fix it — no questions, no limits.
+          </p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg></div>
+          <h3 class="card-title">Training Programs</h3>
+          <p class="card-desc">We teach practical, hands-on classes so you can learn how to do these repairs yourself.
+          </p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z">
+              </path>
+            </svg></div>
+          <h3 class="card-title">Genuine Parts</h3>
+          <p class="card-desc">We use only the highest quality components to ensure peak performance and longevity.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="2" y1="12" x2="22" y2="12"></line>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z">
+              </path>
+            </svg></div>
+          <h3 class="card-title">Remote Support</h3>
+          <p class="card-desc">Software diagnostics and troubleshooting available remotely. Expert help, anywhere you
+            are.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== TESTIMONIALS ==================== -->
+  <section class="section" id="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Testimonials</span>
+        <h2 class="section-title reveal">What Our <strong>Clients Say</strong></h2>
+      </div>
+      <div class="cards-grid cards-grid-3" x-data="{ loaded: false }" x-init="setTimeout(() => loaded = true, 300)">
+        <div class="glass-card testimonial-card reveal" x-show="loaded" x-transition>
+          <div class="card-glow"></div>
+          <p class="testimonial-quote">"I spilled coffee on my MacBook and Apple told me I needed a new one. Marcus
+            fixed the logic board in three days and saved all my data."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">S</div>
+            <div>
+              <div class="testimonial-name">Sana M.</div>
+              <div class="testimonial-role">Graphic Designer</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card testimonial-card reveal" x-show="loaded" x-transition>
+          <div class="card-glow"></div>
+          <p class="testimonial-quote">"Took the beginner course last year. The hands-on practice was super helpful, and
+            now I'm doing repairs as a side gig."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">D</div>
+            <div>
+              <div class="testimonial-name">Bilal K.</div>
+              <div class="testimonial-role">Student</div>
+            </div>
+          </div>
+        </div>
+        <div class="glass-card testimonial-card reveal" x-show="loaded" x-transition>
+          <div class="card-glow"></div>
+          <p class="testimonial-quote">"Dropped my phone and shattered the screen. Walked in and they had it looking
+            brand new in about 45 minutes."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">A</div>
+            <div>
+              <div class="testimonial-name">Ali R.</div>
+              <div class="testimonial-role">Local Guide</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- ==================== CTA BANNER ==================== -->
+  <section class="section" id="cta-banner" style="padding: clamp(100px, 15vh, 200px) 0;">
+    <div class="bg-radial-top"></div>
+    <div class="container" style="text-align: center;">
+      <span class="section-label reveal">Start Your Journey</span>
+      <h2 class="section-title reveal" style="font-size: var(--font-size-hero); margin-bottom: 32px;">
+        Need a <strong>repair</strong><br>or want to <strong>learn</strong>?
+      </h2>
+      <p class="section-subtitle reveal" style="margin-bottom: 48px;">Reach out if your device is broken, or sign up for
+        a class if you want to fix them yourself.</p>
+      <div class="hero-cta reveal">
+        <a href="contact.html" class="cta-primary magnetic"><span>Get In Touch</span></a>
+        <a href="institute.html" class="cta-secondary magnetic"><span>View Courses</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 16px;">
+            <div class="logo-icon"></div>
+            Apple Tech
+          </div>
+          <p>Real, component-level repairs and hands-on classes.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="services.html">iPhone Repair</a>
+          <a href="services.html">Mac Repair</a>
+          <a href="services.html">iPad Repair</a>
+          <a href="services.html">Apple Watch</a>
+          <a href="services.html">Data Recovery</a>
+        </div>
+        <div class="footer-col">
+          <h4>Institute</h4>
+          <a href="institute.html">Courses</a>
+          <a href="institute.html">Certifications</a>
+          <a href="institute.html">Enrollment</a>
+          <a href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4>
+          <a href="contact.html">Contact</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="#">Facebook</a>
+          <a href="#">Instagram</a>
+          <a href="#">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Apple Tech Repairs & Institute. All rights reserved.</span>
+        <span>Designed with precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Float -->
+  <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.12/dist/cdn.min.js"></script>
+
+  <!-- Three.js (ES Module) -->
+  <script type="module" src="js/three-scene.js"></script>
+
+  <!-- App Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/hero.js"></script>
+
+</body>
+
+</html>

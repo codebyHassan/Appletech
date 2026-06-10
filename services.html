@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repair Services — Apple Tech Repairs & Institute</title>
+  <meta name="description"
+    content="Expert Apple device repair services. iPhone, MacBook, iPad, Apple Watch repairs with genuine parts and lifetime warranty.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { theme: { extend: { fontFamily: { 'inter': ['Inter', 'sans-serif'] } } } }</script>
+  <link rel="stylesheet" href="css/style.css">
+  <script type="importmap">
+  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
+  </script>
+</head>
+
+<body data-page="services">
+
+  <div class="page-transition"></div>
+
+  <div class="cursor-ring"></div>
+  <div class="three-canvas" id="three-canvas"></div>
+  <div class="particles"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="logo-icon"></div>Apple Tech
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="services.html" class="nav-link active">Services</a>
+        <a href="institute.html" class="nav-link">Institute</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="gallery.html" class="nav-link">Gallery</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="nav-mobile" id="nav-mobile">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="services.html" class="nav-link active">Services</a>
+    <a href="institute.html" class="nav-link">Institute</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="gallery.html" class="nav-link">Gallery</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+  </div>
+
+  <!-- ==================== PAGE HERO ==================== -->
+  <section class="page-hero">
+    <div class="bg-radial-top"></div>
+    <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
+      <div class="hero-content" data-parallax-mouse="10" style="text-align: left; padding: 0; margin: 0;">
+        <span class="section-label reveal">Expert Apple Repairs</span>
+        <h1 class="page-hero-title reveal">Repair <strong>Services</strong></h1>
+        <p class="page-hero-subtitle reveal" style="margin-left: 0; margin-right: auto;">We can fix pretty much anything
+          with an Apple logo on it.</p>
+      </div>
+      <div class="hero-image reveal-right" data-parallax-mouse="-10"
+        style="display: flex; justify-content: center; align-items: center;">
+        <img src="aserts/herosection.png" alt="Apple Devices">
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== LAB SHOWCASE ==================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="glass-card reveal"
+        style="padding: 0; overflow: hidden; border-radius: 24px; aspect-ratio: 21/9; position: relative;">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1600&q=80"
+          alt="Complex logic board repair"
+          style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; mix-blend-mode: screen; filter: grayscale(50%) contrast(1.2);">
+        <div
+          style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); pointer-events: none;">
+        </div>
+        <div style="position: absolute; bottom: 40px; left: 40px; max-width: 600px;">
+          <h2 class="section-title" style="margin-bottom: 8px; font-size: var(--font-size-2xl);">We do the <strong>Hard
+              Stuff</strong></h2>
+          <p style="color: var(--gray-300);">Advanced diagnostics and component-level repairs performed in our
+            state-of-the-art lab.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== REPAIR CATEGORIES ==================== -->
+  <section class="section" id="repair-categories" style="padding-top: 0;">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Our Specialties</span>
+        <h2 class="section-title reveal">What we fix <strong>every day</strong></h2>
+      </div>
+      <div class="cards-grid cards-grid-3">
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg></div>
+          <h3 class="card-title">Screen Repair</h3>
+          <p class="card-desc">We replace broken screens for iPhones, iPads, and MacBooks. We make sure the colors and
+            touch feel exactly like the original.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="7" width="16" height="10" rx="2" ry="2"></rect>
+              <line x1="22" y1="11" x2="22" y2="13"></line>
+            </svg></div>
+          <h3 class="card-title">Battery Replacement</h3>
+          <p class="card-desc">If your phone is dying halfway through the day, it's time for a new battery. Quick and
+            simple.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 2v6" />
+              <path d="M7 6v2a5 5 0 0 0 10 0V6" />
+              <path d="M12 13v9" />
+            </svg></div>
+          <h3 class="card-title">Logic Board Repair</h3>
+          <p class="card-desc">We actually fix the chips on the board instead of telling you to buy a whole new one.
+            Great for saving "dead" devices.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path
+                d="M12 22a7 7 0 0 0 7-7c0-2-1-3.9-3-5.5s-3.5-4-4-6.5c-.5 2.5-2 4.9-4 6.5C6 11.1 5 13 5 15a7 7 0 0 0 7 7z">
+              </path>
+            </svg></div>
+          <h3 class="card-title">Water Damage</h3>
+          <p class="card-desc">Dropped it in the pool? We'll clean off the corrosion and do everything we can to get it
+            booting again.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="22" y1="12" x2="2" y2="12"></line>
+              <path
+                d="M5.45 5.11L2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z">
+              </path>
+              <line x1="6" y1="16" x2="6.01" y2="16"></line>
+              <line x1="10" y1="16" x2="10.01" y2="16"></line>
+            </svg></div>
+          <h3 class="card-title">Data Recovery</h3>
+          <p class="card-desc">If your device is completely destroyed but you need those photos back, we can usually
+            recover the data.</p>
+        </div>
+        <div class="glass-card reveal">
+          <div class="card-glow"></div>
+          <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+              stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="3"></circle>
+              <path
+                d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+              </path>
+            </svg></div>
+          <h3 class="card-title">Software Solutions</h3>
+          <p class="card-desc">Stuck on the Apple logo? Need to reinstall macOS? We can sort out most software issues
+            pretty quickly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== DIAGNOSTIC WIZARD ==================== -->
+  <section class="section" id="diagnostics" x-data="{ step: 1, device: '', issue: '' }">
+    <div class="container" style="max-width: 700px;">
+      <div class="section-header">
+        <span class="section-label reveal">Quick Check</span>
+        <h2 class="section-title reveal">Get a <strong>quote</strong></h2>
+        <p class="section-subtitle reveal">Tell us what's broken and we'll give you a rough idea of what it might cost.
+        </p>
+      </div>
+
+      <div class="glass-card wizard reveal">
+        <div class="card-glow"></div>
+        <!-- Progress -->
+        <div class="wizard-progress">
+          <div class="wizard-step-dot" :class="{ 'active': step === 1, 'completed': step > 1 }"></div>
+          <div class="wizard-step-dot" :class="{ 'active': step === 2, 'completed': step > 2 }"></div>
+          <div class="wizard-step-dot" :class="{ 'active': step === 3 }"></div>
+        </div>
+
+        <!-- Step 1: Device -->
+        <div class="wizard-panel" :class="{ 'active': step === 1 }">
+          <h3 style="font-size: var(--font-size-xl); font-weight: 500; margin-bottom: 24px; text-align: center;">Select
+            Your Device</h3>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+            <button @click="device = 'iPhone'; step = 2" class="cta-secondary"
+              style="width: 100%; justify-content: center;">iPhone</button>
+            <button @click="device = 'MacBook'; step = 2" class="cta-secondary"
+              style="width: 100%; justify-content: center;">MacBook</button>
+            <button @click="device = 'iPad'; step = 2" class="cta-secondary"
+              style="width: 100%; justify-content: center;">iPad</button>
+            <button @click="device = 'Apple Watch'; step = 2" class="cta-secondary"
+              style="width: 100%; justify-content: center;">Apple Watch</button>
+          </div>
+        </div>
+
+        <!-- Step 2: Issue -->
+        <div class="wizard-panel" :class="{ 'active': step === 2 }">
+          <h3 style="font-size: var(--font-size-xl); font-weight: 500; margin-bottom: 24px; text-align: center;">What's
+            the Issue?</h3>
+          <div style="display: grid; gap: 12px;">
+            <button @click="issue = 'Cracked Screen'; step = 3" class="cta-secondary"
+              style="width: 100%; justify-content: center;">Cracked Screen</button>
+            <button @click="issue = 'Battery Problem'; step = 3" class="cta-secondary"
+              style="width: 100%; justify-content: center;">Battery Draining Fast</button>
+            <button @click="issue = 'Water Damage'; step = 3" class="cta-secondary"
+              style="width: 100%; justify-content: center;">Water Damage</button>
+            <button @click="issue = 'Not Turning On'; step = 3" class="cta-secondary"
+              style="width: 100%; justify-content: center;">Won't Turn On</button>
+            <button @click="issue = 'Other'; step = 3" class="cta-secondary"
+              style="width: 100%; justify-content: center;">Other Issue</button>
+          </div>
+          <button @click="step = 1"
+            style="margin-top: 16px; font-size: var(--font-size-xs); color: var(--gray-500); background: none; border: none; letter-spacing: 0.1em;">←
+            Back</button>
+        </div>
+
+        <!-- Step 3: Result -->
+        <div class="wizard-panel" :class="{ 'active': step === 3 }">
+          <div style="text-align: center;">
+            <div style="display: flex; justify-content: center; margin-bottom: 16px;">
+              <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#25D366" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                <polyline points="22 4 12 14.01 9 11.01"></polyline>
+              </svg>
+            </div>
+            <h3 style="font-size: var(--font-size-xl); font-weight: 500; margin-bottom: 12px;">Got it!</h3>
+            <p style="color: var(--gray-400); margin-bottom: 8px; font-size: var(--font-size-sm);">
+              <strong x-text="device" style="color: var(--white);"></strong> — <span x-text="issue"></span>
+            </p>
+            <p style="color: var(--gray-400); margin-bottom: 24px; font-size: var(--font-size-sm);">Estimated repair
+              time: <strong style="color: var(--white);">1-3 hours</strong></p>
+            <p
+              style="font-size: var(--font-size-3xl); font-weight: 200; margin-bottom: 24px; background: linear-gradient(135deg, #fff, #a3a3a3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+              From Rs 5,000</p>
+            <a href="contact.html" class="cta-primary magnetic"><span>Book Repair</span></a>
+            <br>
+            <button @click="step = 1; device = ''; issue = ''"
+              style="margin-top: 16px; font-size: var(--font-size-xs); color: var(--gray-500); background: none; border: none; letter-spacing: 0.1em;">Start
+              Over</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== PRICING ==================== -->
+  <section class="section" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label reveal">Transparent Pricing</span>
+        <h2 class="section-title reveal">Repair <strong>Plans</strong></h2>
+        <p class="section-subtitle reveal">No hidden fees. Free diagnostics. Pay only for what you need.</p>
+      </div>
+      <div class="cards-grid cards-grid-3">
+        <div class="glass-card pricing-card reveal">
+          <div class="card-glow"></div>
+          <div class="pricing-name">Basic</div>
+          <div class="pricing-price">Rs 5,000</div>
+          <div class="pricing-period">Starting from</div>
+          <ul class="pricing-features">
+            <li>Screen Protector Install</li>
+            <li>Software Diagnostics</li>
+            <li>Battery Health Check</li>
+            <li>OS Optimization</li>
+            <li>30-Day Warranty</li>
+          </ul>
+          <a href="contact.html" class="cta-secondary magnetic" style="width: 100%; justify-content: center;"><span>Get
+              Started</span></a>
+        </div>
+        <div class="glass-card pricing-card featured reveal">
+          <div class="card-glow"></div>
+          <div class="pricing-name">Professional</div>
+          <div class="pricing-price">Rs 25,000</div>
+          <div class="pricing-period">Starting from</div>
+          <ul class="pricing-features">
+            <li>Screen Replacement</li>
+            <li>Battery Replacement</li>
+            <li>Charging Port Repair</li>
+            <li>Full Diagnostics Report</li>
+            <li>Lifetime Warranty</li>
+          </ul>
+          <a href="contact.html" class="cta-primary magnetic" style="width: 100%; justify-content: center;"><span>Choose
+              Pro</span></a>
+        </div>
+        <div class="glass-card pricing-card reveal">
+          <div class="card-glow"></div>
+          <div class="pricing-name">Enterprise</div>
+          <div class="pricing-price">Rs 60,000</div>
+          <div class="pricing-period">Starting from</div>
+          <ul class="pricing-features">
+            <li>Logic Board Repair</li>
+            <li>Data Recovery</li>
+            <li>Water Damage Treatment</li>
+            <li>Priority Service</li>
+            <li>Lifetime Warranty</li>
+          </ul>
+          <a href="contact.html" class="cta-secondary magnetic"
+            style="width: 100%; justify-content: center;"><span>Contact Us</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="glow-divider"></div>
+
+  <!-- ==================== BOOKING ==================== -->
+  <section class="section" id="booking">
+    <div class="container" style="max-width: 600px;">
+      <div class="section-header">
+        <span class="section-label reveal">Schedule Now</span>
+        <h2 class="section-title reveal">Book a <strong>Repair</strong></h2>
+      </div>
+      <div class="glass-card reveal">
+        <div class="card-glow"></div>
+        <form id="booking-form">
+          <div class="form-group">
+            <input type="text" class="form-input" placeholder=" " required>
+            <label class="form-label">Full Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-input" placeholder=" " required>
+            <label class="form-label">Email Address</label>
+          </div>
+          <div class="form-group">
+            <input type="tel" class="form-input" placeholder=" " required>
+            <label class="form-label">Phone Number</label>
+          </div>
+          <div class="form-group">
+            <select class="form-input" required>
+              <option value="" disabled selected>Select Device</option>
+              <option>iPhone</option>
+              <option>MacBook</option>
+              <option>iPad</option>
+              <option>Apple Watch</option>
+              <option>AirPods</option>
+              <option>iMac</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <input type="date" class="form-input" required>
+            <label class="form-label"
+              style="top: 0; left: 16px; font-size: var(--font-size-xs); color: var(--gray-500); background: transparent; padding: 0 8px;">Preferred
+              Date</label>
+          </div>
+          <div class="form-group">
+            <textarea class="form-input" placeholder=" " rows="3"></textarea>
+            <label class="form-label">Describe the Issue</label>
+          </div>
+          <button type="submit" class="cta-primary magnetic" style="width: 100%; justify-content: center;">
+            <span>Book Appointment</span>
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer" id="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom: 16px;">
+            <div class="logo-icon"></div>Apple Tech
+          </div>
+          <p>World-class Apple device repairs and professional training programs. Master Apple technology. Repair
+            without limits.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4><a href="services.html">iPhone Repair</a><a href="services.html">Mac Repair</a><a
+            href="services.html">iPad Repair</a><a href="services.html">Apple Watch</a>
+        </div>
+        <div class="footer-col">
+          <h4>Institute</h4><a href="institute.html">Courses</a><a href="institute.html">Certifications</a><a
+            href="about.html">About Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Connect</h4><a href="contact.html">Contact</a><a href="gallery.html">Gallery</a><a href="#">Instagram</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2025 Apple Tech Repairs & Institute. All rights reserved.</span>
+        <span>Designed with precision</span>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-float" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path
+        d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+    </svg>
+  </a>
+
+  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.12/dist/cdn.min.js"></script>
+  <script type="module" src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/pages/services.js"></script>
+</body>
+
+</html>

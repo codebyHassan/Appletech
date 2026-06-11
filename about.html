@@ -10,22 +10,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { theme: { extend: { fontFamily: { 'inter': ['Inter', 'sans-serif'] } } } }</script>
   <link rel="stylesheet" href="css/style.css">
-  <script type="importmap">
-  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
-  </script>
 </head>
 
 <body data-page="about">
 
-  <div class="page-transition"></div>
-
-  <div class="cursor-ring"></div>
-  <div class="three-canvas" id="three-canvas"></div>
-  <div class="particles"></div>
 
   <nav class="nav" id="nav">
     <div class="nav-inner">
@@ -56,16 +47,16 @@
   <section class="page-hero">
     <div class="bg-radial-top"></div>
     <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-      <div class="hero-content" data-parallax-mouse="10" style="text-align: left; padding: 0; margin: 0;">
+      <div class="hero-content" style="text-align: left; padding: 0; margin: 0;">
         <span class="section-label reveal">Our Story</span>
         <h1 class="page-hero-title reveal">About <strong>Apple Tech</strong></h1>
         <p class="page-hero-subtitle reveal" style="margin-left: 0; margin-right: auto;">We're a team of technicians who
           love taking things apart and making them work again.</p>
       </div>
-      <div class="hero-image reveal-right" data-parallax-mouse="-10"
+      <div class="hero-image"
         style="display: flex; justify-content: center; align-items: center;">
-        <img src="aserts/hero-section-right-side.png" alt="Apple Devices"
-          style="width: 100%; max-width: 500px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5)); animation: float 6s ease-in-out infinite;">
+        <img src="aserts/hero-section-right-side.png" alt="Apple Devices" class="reveal"
+          style="width: 100%; max-width: 500px;">
       </div>
     </div>
   </section>
@@ -82,7 +73,7 @@
           style="position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9), transparent); pointer-events: none;">
         </div>
         <div style="position: absolute; bottom: 40px; left: 40px; max-width: 600px;">
-          <h2 class="section-title" style="margin-bottom: 8px; font-size: var(--font-size-2xl);">Precision
+          <h2 class="section-title reveal" style="margin-bottom: 8px; font-size: var(--font-size-2xl);">Precision
             <strong>Micro-Soldering</strong></h2>
           <p style="color: var(--gray-300);">Where others see a dead logic board, we see a puzzle waiting to be solved
             under the microscope.</p>
@@ -117,9 +108,9 @@
       </div>
       <div class="timeline">
         <div class="timeline-item">
-          <div class="timeline-content">
-            <div class="glass-card">
-              <div class="card-glow"></div>
+<div class="timeline-content">
+            <div class="glass-card reveal reveal-delay-1">
+               
               <div class="timeline-year">2013</div>
               <h3 class="timeline-title">The Beginning</h3>
               <p>Started out fixing friends' iPhones on a kitchen table. Eventually rented a small shop space in the
@@ -129,10 +120,10 @@
           <div class="timeline-content"></div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-content"></div>
+<div class="timeline-content"></div>
           <div class="timeline-content">
-            <div class="glass-card">
-              <div class="card-glow"></div>
+            <div class="glass-card reveal reveal-delay-2">
+               
               <div class="timeline-year">2016</div>
               <h3 class="timeline-title">Micro-Soldering Pioneer</h3>
               <p>Bought our first serious microscope and hot air station. Started offering board-level repairs when most
@@ -141,9 +132,9 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-content">
-            <div class="glass-card">
-              <div class="card-glow"></div>
+<div class="timeline-content">
+            <div class="glass-card reveal reveal-delay-3">
+               
               <div class="timeline-year">2018</div>
               <h3 class="timeline-title">Institute Founded</h3>
               <p>Realized there was a huge shortage of good techs. We opened the Institute to start teaching others how
@@ -153,10 +144,10 @@
           <div class="timeline-content"></div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-content"></div>
+<div class="timeline-content"></div>
           <div class="timeline-content">
-            <div class="glass-card">
-              <div class="card-glow"></div>
+            <div class="glass-card reveal reveal-delay-4">
+               
               <div class="timeline-year">2021</div>
               <h3 class="timeline-title">Scaling Up</h3>
               <p class="timeline-desc">Crossed the milestone of 10,000 successful device repairs. Expanded to a larger
@@ -165,9 +156,9 @@
           </div>
         </div>
         <div class="timeline-item">
-          <div class="timeline-content">
-            <div class="glass-card">
-              <div class="card-glow"></div>
+<div class="timeline-content">
+            <div class="glass-card reveal reveal-delay-5">
+               
               <div class="timeline-year">2024</div>
               <h3 class="timeline-title">Industry Leader</h3>
               <p>Moved into our current facility, giving us enough room for the main repair lab and a dedicated
@@ -190,8 +181,8 @@
         <h2 class="section-title reveal">Our <strong>Values</strong></h2>
       </div>
       <div class="cards-grid cards-grid-3">
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-1">
+          
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -201,8 +192,8 @@
           <h3 class="card-title">Precision</h3>
           <p class="card-desc">We try to get every tiny screw back exactly where it belongs.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-2">
+          
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -212,8 +203,8 @@
           <p class="card-desc">We'll tell you straight up if a repair isn't worth it. No point in fixing something
             that's totally dead.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-3">
+          
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -222,8 +213,8 @@
           <p class="card-desc">Apple keeps changing how they build things, so we keep buying new tools and learning new
             tricks.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-4">
+          
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
@@ -232,8 +223,8 @@
           <p class="card-desc">We don't gatekeep our repair methods. If we figure out a tough repair, we teach our
             students how to do it.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-5">
+          
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -245,8 +236,8 @@
           <p class="card-desc">Keeping electronics out of landfills is just a good thing to do. Repairing is almost
             always better than replacing.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-6">
+          
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon
@@ -271,8 +262,8 @@
         <h2 class="section-title reveal">Our <strong>Team</strong></h2>
       </div>
       <div class="cards-grid cards-grid-3">
-        <div class="glass-card team-card reveal" style="text-align: center;">
-          <div class="card-glow"></div>
+        <div class="glass-card team-card reveal reveal-delay-1" style="text-align: center;">
+          
           <div
             style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 20px; background: linear-gradient(135deg, var(--gray-700), var(--gray-900)); border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--accent);">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -288,8 +279,8 @@
           <p class="card-desc">Been fixing Macs since the Core 2 Duo days. Spends most of his time looking through a
             microscope.</p>
         </div>
-        <div class="glass-card team-card reveal" style="text-align: center;">
-          <div class="card-glow"></div>
+        <div class="glass-card team-card reveal reveal-delay-2" style="text-align: center;">
+          
           <div
             style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 20px; background: linear-gradient(135deg, var(--gray-700), var(--gray-900)); border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--accent);">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -307,8 +298,8 @@
           <p class="card-desc">Used to work at an Apple Store before realizing he wanted to actually fix the boards.
             Leads our advanced classes.</p>
         </div>
-        <div class="glass-card team-card reveal" style="text-align: center;">
-          <div class="card-glow"></div>
+        <div class="glass-card team-card reveal reveal-delay-3" style="text-align: center;">
+          
           <div
             style="width: 80px; height: 80px; border-radius: 50%; margin: 0 auto 20px; background: linear-gradient(135deg, var(--gray-700), var(--gray-900)); border: 2px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--accent);">
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -365,15 +356,7 @@
     </svg>
   </a>
 
-  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.12/dist/cdn.min.js"></script>
-  <script type="module" src="js/three-scene.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/pages/about.js"></script>
 </body>
 
 </html>

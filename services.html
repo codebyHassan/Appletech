@@ -10,22 +10,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { theme: { extend: { fontFamily: { 'inter': ['Inter', 'sans-serif'] } } } }</script>
   <link rel="stylesheet" href="css/style.css">
-  <script type="importmap">
-  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
-  </script>
 </head>
 
 <body data-page="services">
-
-  <div class="page-transition"></div>
-
-  <div class="cursor-ring"></div>
-  <div class="three-canvas" id="three-canvas"></div>
-  <div class="particles"></div>
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
@@ -57,13 +47,13 @@
   <section class="page-hero">
     <div class="bg-radial-top"></div>
     <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-      <div class="hero-content" data-parallax-mouse="10" style="text-align: left; padding: 0; margin: 0;">
+      <div class="hero-content" style="text-align: left; padding: 0; margin: 0;">
         <span class="section-label reveal">Expert Apple Repairs</span>
         <h1 class="page-hero-title reveal">Repair <strong>Services</strong></h1>
         <p class="page-hero-subtitle reveal" style="margin-left: 0; margin-right: auto;">We can fix pretty much anything
           with an Apple logo on it.</p>
       </div>
-      <div class="hero-image reveal-right" data-parallax-mouse="-10"
+      <div class="hero-image"
         style="display: flex; justify-content: center; align-items: center;">
         <img src="aserts/herosection.png" alt="Apple Devices">
       </div>
@@ -101,8 +91,7 @@
         <h2 class="section-title reveal">What we fix <strong>every day</strong></h2>
       </div>
       <div class="cards-grid cards-grid-3">
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-1">
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
@@ -112,8 +101,7 @@
           <p class="card-desc">We replace broken screens for iPhones, iPads, and MacBooks. We make sure the colors and
             touch feel exactly like the original.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-2">
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="7" width="16" height="10" rx="2" ry="2"></rect>
@@ -123,8 +111,7 @@
           <p class="card-desc">If your phone is dying halfway through the day, it's time for a new battery. Quick and
             simple.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-3">
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 2v6" />
@@ -135,8 +122,7 @@
           <p class="card-desc">We actually fix the chips on the board instead of telling you to buy a whole new one.
             Great for saving "dead" devices.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-4">
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -147,8 +133,7 @@
           <p class="card-desc">Dropped it in the pool? We'll clean off the corrosion and do everything we can to get it
             booting again.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-5">
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <line x1="22" y1="12" x2="2" y2="12"></line>
@@ -162,8 +147,7 @@
           <p class="card-desc">If your device is completely destroyed but you need those photos back, we can usually
             recover the data.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-6">
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="3"></circle>
@@ -192,7 +176,6 @@
       </div>
 
       <div class="glass-card wizard reveal">
-        <div class="card-glow"></div>
         <!-- Progress -->
         <div class="wizard-progress">
           <div class="wizard-step-dot" :class="{ 'active': step === 1, 'completed': step > 1 }"></div>
@@ -256,7 +239,7 @@
             <p
               style="font-size: var(--font-size-3xl); font-weight: 200; margin-bottom: 24px; background: linear-gradient(135deg, #fff, #a3a3a3); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
               From Rs 5,000</p>
-            <a href="contact.html" class="cta-primary magnetic"><span>Book Repair</span></a>
+            <a href="contact.html" class="cta-primary"><span>Book Repair</span></a>
             <br>
             <button @click="step = 1; device = ''; issue = ''"
               style="margin-top: 16px; font-size: var(--font-size-xs); color: var(--gray-500); background: none; border: none; letter-spacing: 0.1em;">Start
@@ -278,8 +261,7 @@
         <p class="section-subtitle reveal">No hidden fees. Free diagnostics. Pay only for what you need.</p>
       </div>
       <div class="cards-grid cards-grid-3">
-        <div class="glass-card pricing-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card pricing-card reveal reveal-delay-1">
           <div class="pricing-name">Basic</div>
           <div class="pricing-price">Rs 5,000</div>
           <div class="pricing-period">Starting from</div>
@@ -290,11 +272,10 @@
             <li>OS Optimization</li>
             <li>30-Day Warranty</li>
           </ul>
-          <a href="contact.html" class="cta-secondary magnetic" style="width: 100%; justify-content: center;"><span>Get
+          <a href="contact.html" class="cta-secondary" style="width: 100%; justify-content: center;"><span>Get
               Started</span></a>
         </div>
-        <div class="glass-card pricing-card featured reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card pricing-card featured reveal reveal-delay-2">
           <div class="pricing-name">Professional</div>
           <div class="pricing-price">Rs 25,000</div>
           <div class="pricing-period">Starting from</div>
@@ -305,11 +286,10 @@
             <li>Full Diagnostics Report</li>
             <li>Lifetime Warranty</li>
           </ul>
-          <a href="contact.html" class="cta-primary magnetic" style="width: 100%; justify-content: center;"><span>Choose
+          <a href="contact.html" class="cta-primary" style="width: 100%; justify-content: center;"><span>Choose
               Pro</span></a>
         </div>
-        <div class="glass-card pricing-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card pricing-card reveal reveal-delay-3">
           <div class="pricing-name">Enterprise</div>
           <div class="pricing-price">Rs 60,000</div>
           <div class="pricing-period">Starting from</div>
@@ -320,7 +300,7 @@
             <li>Priority Service</li>
             <li>Lifetime Warranty</li>
           </ul>
-          <a href="contact.html" class="cta-secondary magnetic"
+          <a href="contact.html" class="cta-secondary"
             style="width: 100%; justify-content: center;"><span>Contact Us</span></a>
         </div>
       </div>
@@ -337,7 +317,6 @@
         <h2 class="section-title reveal">Book a <strong>Repair</strong></h2>
       </div>
       <div class="glass-card reveal">
-        <div class="card-glow"></div>
         <form id="booking-form">
           <div class="form-group">
             <input type="text" class="form-input" placeholder=" " required>
@@ -372,7 +351,7 @@
             <textarea class="form-input" placeholder=" " rows="3"></textarea>
             <label class="form-label">Describe the Issue</label>
           </div>
-          <button type="submit" class="cta-primary magnetic" style="width: 100%; justify-content: center;">
+          <button type="submit" class="cta-primary" style="width: 100%; justify-content: center;">
             <span>Book Appointment</span>
           </button>
         </form>
@@ -417,15 +396,8 @@
     </svg>
   </a>
 
-  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.12/dist/cdn.min.js"></script>
-  <script type="module" src="js/three-scene.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/pages/services.js"></script>
 </body>
 
 </html>

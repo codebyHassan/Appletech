@@ -10,23 +10,12 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>tailwind.config = { theme: { extend: { fontFamily: { 'inter': ['Inter', 'sans-serif'] } } } }</script>
   <link rel="stylesheet" href="css/style.css">
-  <script type="importmap">
-  { "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }
-  </script>
 </head>
 
 <body data-page="contact">
-
-  <div class="page-transition"></div>
-
-  <div class="cursor-ring"></div>
-  <div class="three-canvas" id="three-canvas"></div>
-  <div class="particles"></div>
-
   <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">
@@ -56,14 +45,14 @@
   <section class="page-hero" style="min-height: 40vh; padding-top: 150px; padding-bottom: 50px;">
     <div class="bg-radial-top"></div>
     <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-      <div class="hero-content" data-parallax-mouse="10" style="text-align: left; padding: 0; margin: 0;">
+      <div class="hero-content" style="text-align: left; padding: 0; margin: 0;">
         <span class="section-label reveal">Get in Touch</span>
         <h1 class="page-hero-title reveal" style="font-size: var(--font-size-4xl);">Contact <strong>Us</strong></h1>
       </div>
-      <div class="hero-image reveal-right" data-parallax-mouse="-10"
+      <div class="hero-image"
         style="display: flex; justify-content: center; align-items: center;">
-        <img src="aserts/hero-section-right-side.png" alt="Apple Devices"
-          style="width: 100%; max-width: 500px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5)); animation: float 6s ease-in-out infinite;">
+        <img src="aserts/hero-section-right-side.png" alt="Apple Devices" class="reveal"
+          style="width: 100%; max-width: 500px; filter: drop-shadow(0 20px 40px rgba(0,0,0,0.5));">
       </div>
     </div>
   </section>
@@ -74,10 +63,9 @@
       <div class="cards-grid cards-grid-2" style="gap: 40px; align-items: start;">
 
         <!-- Info & Map -->
-        <div class="reveal-left">
+        <div>
           <div style="display: grid; gap: 24px; margin-bottom: 40px;">
-            <div class="glass-card" style="padding: 24px; display: flex; align-items: center; gap: 20px;">
-              <div class="card-glow"></div>
+            <div class="glass-card reveal reveal-delay-1" style="padding: 24px; display: flex; align-items: center; gap: 20px;">
               <div
                 style="width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--accent);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -96,8 +84,7 @@
               </div>
             </div>
 
-            <div class="glass-card" style="padding: 24px; display: flex; align-items: center; gap: 20px;">
-              <div class="card-glow"></div>
+            <div class="glass-card reveal reveal-delay-2" style="padding: 24px; display: flex; align-items: center; gap: 20px;">
               <div
                 style="width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--accent);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -115,8 +102,7 @@
               </div>
             </div>
 
-            <div class="glass-card" style="padding: 24px; display: flex; align-items: center; gap: 20px;">
-              <div class="card-glow"></div>
+            <div class="glass-card reveal reveal-delay-3" style="padding: 24px; display: flex; align-items: center; gap: 20px;">
               <div
                 style="width: 48px; height: 48px; border-radius: 12px; background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border); display: flex; align-items: center; justify-content: center; color: var(--accent);">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
@@ -135,8 +121,7 @@
             </div>
           </div>
 
-          <div class="map-container glass-card" style="padding: 8px;">
-            <div class="card-glow"></div>
+          <div class="map-container glass-card reveal" style="padding: 8px;">
             <iframe
               src="https://maps.google.com/maps?q=Apple%20tech%20repair%20institute%20Lahore&t=&z=15&ie=UTF8&iwloc=&output=embed"
               width="100%" height="100%"
@@ -146,8 +131,7 @@
         </div>
 
         <!-- Contact Form -->
-        <div class="glass-card reveal-right">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal">
           <h2 style="font-size: var(--font-size-2xl); font-weight: 200; margin-bottom: 8px;">Send a
             <strong>Message</strong></h2>
           <p style="color: var(--gray-400); font-size: var(--font-size-sm); margin-bottom: 32px;">We'll get back to you
@@ -175,7 +159,7 @@
               <textarea class="form-input" placeholder=" " rows="5" required></textarea>
               <label class="form-label">Your Message</label>
             </div>
-            <button type="submit" class="cta-primary magnetic" style="width: 100%; justify-content: center;">
+            <button type="submit" class="cta-primary" style="width: 100%; justify-content: center;">
               <span>Send Message</span>
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                 stroke-linecap="round" stroke-linejoin="round" style="margin-left: 8px;">
@@ -226,13 +210,7 @@
     </svg>
   </a>
 
-  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
-  <script type="module" src="js/three-scene.js"></script>
   <script src="js/main.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/pages/contact.js"></script>
 </body>
 
 </html>

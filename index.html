@@ -13,60 +13,11 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  <!-- Lenis CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/lenis@1.3.23/dist/lenis.css">
-
-  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          fontFamily: { 'inter': ['Inter', 'sans-serif'] },
-        }
-      }
-    }
-  </script>
-
-  <!-- Custom CSS -->
   <link rel="stylesheet" href="css/style.css">
-
-  <!-- Three.js Import Map -->
-  <script type="importmap">
-  {
-    "imports": {
-      "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
-      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
-    }
-  }
-  </script>
 </head>
 
 <body>
-
-  <!-- Preloader -->
-  <div class="preloader" id="preloader">
-    <div class="preloader-text">
-      <span class="char">A</span><span class="char">P</span><span class="char">P</span><span class="char">L</span><span
-        class="char">E</span><span class="char">&nbsp;</span><span class="char">T</span><span class="char">E</span><span
-        class="char">C</span><span class="char">H</span>
-    </div>
-    <div class="preloader-line"></div>
-    <div class="preloader-sub">Repairs & Institute</div>
-  </div>
-
-  <!-- Page Transition Overlay -->
-  <div class="page-transition"></div>
-
-  <!-- Custom Cursor -->
-
-
-
-  <!-- Three.js Canvas -->
-  <div class="three-canvas" id="three-canvas"></div>
-
-  <!-- Ambient Particles -->
-  <div class="particles"></div>
 
   <!-- Navigation -->
   <nav class="nav" id="nav">
@@ -103,23 +54,17 @@
   <section class="page-hero" style="display: flex; align-items: center;">
     <div class="bg-radial-top"></div>
     <div class="container grid grid-cols-1 lg:grid-cols-2 gap-12 items-center w-full">
-      <div class="hero-content" data-parallax-mouse="10" style="text-align: left; padding: 0; margin: 0;">
+      <div class="hero-content" style="text-align: left; padding: 0; margin: 0;">
         <span class="section-label reveal">Professional Training</span>
-        <h1 class="page-hero-title reveal" style="font-size: clamp(3rem, 6vw, 5.5rem);">
-          <span class="word"><span class="word-inner">Apple</span></span>
-          <span class="word"><span class="word-inner">Tech</span></span><br>
-          <span class="word"><span class="word-inner">Repairs</span></span>
-          <span class="word"><span class="word-inner">&</span></span><br>
-          <span class="word"><span class="word-inner"><strong>Institute</strong></span></span>
-        </h1>
-        <p class="hero-subtitle" style="text-align: left; margin: 24px 0;">We fix broken Apple devices and teach you how
+        <h1 class="page-hero-title reveal">Apple Tech<br>Repairs &amp; <strong>Institute</strong></h1>
+        <p class="hero-subtitle reveal" style="text-align: left; margin: 24px 0;">We fix broken Apple devices and teach you how
           to do it.</p>
-        <div class="hero-cta" style="justify-content: flex-start;">
-          <a href="services.html" class="cta-primary magnetic"><span>Explore Services</span></a>
-          <a href="institute.html" class="cta-secondary magnetic"><span>Join Institute</span></a>
+        <div class="hero-cta reveal" style="justify-content: flex-start;">
+          <a href="services.html" class="cta-primary"><span>Explore Services</span></a>
+          <a href="institute.html" class="cta-secondary"><span>Join Institute</span></a>
         </div>
       </div>
-      <div class="hero-image reveal-right" data-parallax-mouse="-10"
+      <div class="hero-image"
         style="display: flex; justify-content: center; align-items: center;">
         <img src="aserts/herosection.png" alt="Apple Devices">
       </div>
@@ -131,7 +76,7 @@
   <!-- ==================== VIDEO SHOWCASE ==================== -->
   <section class="section" id="showcase">
     <div class="container">
-      <div class="glass-card reveal"
+      <div class="glass-card"
         style="padding: 0; overflow: hidden; border-radius: 24px; aspect-ratio: 16/9; position: relative;">
         <video autoplay loop muted playsinline src="aserts/video.mp4"
           style="width: 100%; height: 100%; object-fit: cover; opacity: 0.8; mix-blend-mode: screen; filter: grayscale(50%) contrast(1.2);"></video>
@@ -156,8 +101,8 @@
       </div>
       <div class="cards-grid">
         <!-- iPhone -->
-        <div class="glass-card" data-parallax-mouse="5">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-1">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
@@ -168,8 +113,8 @@
             parts.</p>
         </div>
         <!-- Mac -->
-        <div class="glass-card" data-parallax-mouse="8">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-2">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
@@ -180,8 +125,8 @@
           </p>
         </div>
         <!-- iPad -->
-        <div class="glass-card" data-parallax-mouse="6">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-3">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <rect x="4" y="2" width="16" height="20" rx="2" ry="2"></rect>
@@ -192,8 +137,8 @@
             models.</p>
         </div>
         <!-- Apple Watch -->
-        <div class="glass-card" data-parallax-mouse="10">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-4">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="7"></circle>
@@ -220,30 +165,30 @@
         <h2 class="section-title reveal">A decade of <strong>fixing things</strong></h2>
       </div>
       <div class="stats-grid">
-        <div class="glass-card stat-item reveal"
+        <div class="glass-card stat-item reveal reveal-delay-1"
           style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1597872200969-2b65d56bd16b?auto=format&fit=crop&w=600&q=80') center/cover;">
-          <div class="card-glow"></div>
+
           <div class="stat-number" data-count="15000" data-suffix="+"
             style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
           <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Devices Repaired</div>
         </div>
-        <div class="glass-card stat-item reveal"
+        <div class="glass-card stat-item reveal reveal-delay-2"
           style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=600&q=80') center/cover;">
-          <div class="card-glow"></div>
+
           <div class="stat-number" data-count="2500" data-suffix="+"
             style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
           <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Students Trained</div>
         </div>
-        <div class="glass-card stat-item reveal"
+        <div class="glass-card stat-item reveal reveal-delay-3"
           style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1512054502232-10a0a035d672?auto=format&fit=crop&w=600&q=80') center/cover;">
-          <div class="card-glow"></div>
+
           <div class="stat-number" data-count="12" data-suffix=" Yrs"
             style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
           <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Experience</div>
         </div>
-        <div class="glass-card stat-item reveal"
+        <div class="glass-card stat-item reveal reveal-delay-4"
           style="display: flex; flex-direction: column; justify-content: center; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)), url('https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=600&q=80') center/cover;">
-          <div class="card-glow"></div>
+
           <div class="stat-number" data-count="99" data-suffix="%"
             style="font-size: var(--font-size-3xl); z-index: 2; position: relative;">0</div>
           <div class="stat-label" style="z-index: 2; position: relative; color: var(--gray-300);">Satisfaction Rate
@@ -265,8 +210,8 @@
           own.</p>
       </div>
       <div class="cards-grid cards-grid-3">
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-1">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M6 18h8" />
@@ -280,8 +225,8 @@
           <p class="card-desc">We can fix individual chips on the motherboard, saving you from buying a whole new logic
             board.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-2">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon>
@@ -289,8 +234,8 @@
           <h3 class="card-title">Same-Day Service</h3>
           <p class="card-desc">We try to get most standard repairs done on the same day you drop it off.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-3">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
@@ -299,8 +244,8 @@
           <p class="card-desc">Every repair backed by our confidence. If it fails, we fix it — no questions, no limits.
           </p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-4">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
@@ -310,8 +255,8 @@
           <p class="card-desc">We teach practical, hands-on classes so you can learn how to do these repairs yourself.
           </p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-5">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <path
@@ -321,8 +266,8 @@
           <h3 class="card-title">Genuine Parts</h3>
           <p class="card-desc">We use only the highest quality components to ensure peak performance and longevity.</p>
         </div>
-        <div class="glass-card reveal">
-          <div class="card-glow"></div>
+        <div class="glass-card reveal reveal-delay-6">
+
           <div class="card-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
               stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
               <circle cx="12" cy="12" r="10"></circle>
@@ -347,9 +292,9 @@
         <span class="section-label reveal">Testimonials</span>
         <h2 class="section-title reveal">What Our <strong>Clients Say</strong></h2>
       </div>
-      <div class="cards-grid cards-grid-3" x-data="{ loaded: false }" x-init="setTimeout(() => loaded = true, 300)">
-        <div class="glass-card testimonial-card reveal" x-show="loaded" x-transition>
-          <div class="card-glow"></div>
+      <div class="cards-grid cards-grid-3">
+        <div class="glass-card testimonial-card reveal reveal-delay-1">
+
           <p class="testimonial-quote">"I spilled coffee on my MacBook and Apple told me I needed a new one. Marcus
             fixed the logic board in three days and saved all my data."</p>
           <div class="testimonial-author">
@@ -360,8 +305,8 @@
             </div>
           </div>
         </div>
-        <div class="glass-card testimonial-card reveal" x-show="loaded" x-transition>
-          <div class="card-glow"></div>
+        <div class="glass-card testimonial-card reveal reveal-delay-2">
+
           <p class="testimonial-quote">"Took the beginner course last year. The hands-on practice was super helpful, and
             now I'm doing repairs as a side gig."</p>
           <div class="testimonial-author">
@@ -372,8 +317,8 @@
             </div>
           </div>
         </div>
-        <div class="glass-card testimonial-card reveal" x-show="loaded" x-transition>
-          <div class="card-glow"></div>
+        <div class="glass-card testimonial-card reveal reveal-delay-3">
+
           <p class="testimonial-quote">"Dropped my phone and shattered the screen. Walked in and they had it looking
             brand new in about 45 minutes."</p>
           <div class="testimonial-author">
@@ -401,8 +346,8 @@
       <p class="section-subtitle reveal" style="margin-bottom: 48px;">Reach out if your device is broken, or sign up for
         a class if you want to fix them yourself.</p>
       <div class="hero-cta reveal">
-        <a href="contact.html" class="cta-primary magnetic"><span>Get In Touch</span></a>
-        <a href="institute.html" class="cta-secondary magnetic"><span>View Courses</span></a>
+        <a href="contact.html" class="cta-primary"><span>Get In Touch</span></a>
+        <a href="institute.html" class="cta-secondary"><span>View Courses</span></a>
       </div>
     </div>
   </section>
@@ -457,20 +402,7 @@
     </svg>
   </a>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/lenis@1.3.23/dist/lenis.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.0/dist/ScrollTrigger.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.10/dist/htmx.min.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.15.12/dist/cdn.min.js"></script>
-
-  <!-- Three.js (ES Module) -->
-  <script type="module" src="js/three-scene.js"></script>
-
-  <!-- App Scripts -->
   <script src="js/main.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/hero.js"></script>
 
 </body>
 
